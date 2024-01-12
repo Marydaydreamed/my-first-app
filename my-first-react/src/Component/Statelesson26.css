@@ -1,0 +1,16 @@
+.inc{
+    margin-right: 5px;
+    background-color: green;
+}
+.dec{
+    margin-right: 5px;
+    background-color: red;
+}
+.re{
+    margin-right: 5px;
+    background-color: grey;
+}
+.yes{
+    display: flex;
+    justify-content: center;
+}

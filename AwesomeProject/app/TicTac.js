@@ -50,7 +50,7 @@ const TicTac = () => {
     }
     return (
         <View style={styles.container}>
-     <Link href="/index">TicTac game</Link>
+     <Link href="/">TicTac game</Link>
             {winner && <Text style={styles.winner} >Winner: {winner}</Text>}
             {winner && <TouchableOpacity style={styles.restart} onPress={handleRestart}  >
                 <Text style={styles.winner} > Restart</Text>

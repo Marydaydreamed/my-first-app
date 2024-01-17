@@ -4,16 +4,21 @@ import { Link } from 'expo-router';
 const index = () => {
   return (
     <View style={styles.container}>
-                    <Link href="/TicTac">
-                        <Text style={[styles.menu,styles.text]}>
+  <Link href="/TicTac" asChild>
+                <TouchableOpacity style={styles.menu}>
+                    <Text style={styles.text}>
                         TicTac game
-                        </Text>
-                    </Link> 
-                    <Link href="/movies">
-                        <Text style={[styles.menu,styles.text]}>
-                        Movies
-                        </Text>
-                    </Link> 
+                    </Text>
+                </TouchableOpacity>
+            </Link>
+
+            <Link href="/movies" asChild>
+                <TouchableOpacity style={styles.menu}>
+                    <Text style={styles.text}>
+                        Movie List
+                    </Text>
+                </TouchableOpacity>
+            </Link>
     </View>
   )
 }

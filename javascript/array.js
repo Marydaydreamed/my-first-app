@@ -26,10 +26,10 @@
 //     alert('iim utga bn')
 // }
 // 6
-// let colors = prompt ('ungunii neree taslaltai oruulna uu?')
-// let color = colors.split (',')
-// color.pop()
-// alert(color.join (','))
+//  let colors = prompt ('ungunii neree taslaltai oruulna uu?')
+//  let color = colors.split (',')
+//  color.pop()
+//  alert(color.join (','))
 // 7
 // let animals = prompt ('amitnii neree taslaltai bicij oruularai')
 // let animal = animals.split (',')

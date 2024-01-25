@@ -84,7 +84,9 @@ const profile = () => {
         >
           <View key="1">
             <View style={styles.post}>
-              <Image source={post1} style={styles.postImg} />
+              <TouchableOpacity>
+                <Image source={post1} style={styles.postImg} />
+              </TouchableOpacity>
               <Image source={post2} style={styles.postImg} />
               <Image source={post3} style={styles.postImg} />
               <Image source={post4} style={styles.postImg} />

@@ -1,21 +1,19 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
 
 const newpost = () => {
   return (
     <View>
-    <View>
-      <Text>newpost</Text>
-    </View>
-    <View>
+      <View>
+        <Text>newpost</Text>
+      </View>
+      <View>
         <Image />
+      </View>
     </View>
-    </View>
- 
-  )
-}
+  );
+};
 
-export default newpost
+export default newpost;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

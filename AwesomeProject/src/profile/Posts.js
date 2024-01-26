@@ -4,7 +4,7 @@ import PagerView from "react-native-pager-view";
 import { Link } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
-import Post from "./post";
+import Post from "./Post";
 const Posts = ({ data }) => {
   const [selectedTab, setSetselectedTab] = useState(0);
   const onPageChange = (data) => {

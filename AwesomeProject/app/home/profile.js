@@ -10,21 +10,12 @@ import {
 import About from "../../src/profile/About";
 import Post from "../../src/profile/Post";
 import Posts from "../../src/profile/Posts";
-import { postData } from "../../data";
-const proImg = require("../../src/assets/img/download.jpg");
+import { about, postData } from "../../data";
 const Profile = () => {
-  const about = {
-    name: "Mary",
-    bio1: "⋆ ˚｡⋆୨🎀୧⋆ ˚｡⋆",
-    followers: 230,
-    following: 190,
-    postNum: 6,
-  };
-
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <About
-        img={proImg}
+        img={about.img}
         name={about.name}
         bio1={about.bio1}
         followers={about.followers}

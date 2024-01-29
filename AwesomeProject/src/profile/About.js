@@ -1,6 +1,5 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
-
 const About = ({ img, name, bio1, followers, following, postNum }) => {
   return (
     <View>

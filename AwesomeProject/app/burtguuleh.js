@@ -21,6 +21,7 @@ const Login = () => {
     setHidePassword(!hidePassword);
   };
   const handleSignup = async () => {
+    console.log("email, password", email, password);
     const response = await signup(email, password);
     console.log("response", response);
   };

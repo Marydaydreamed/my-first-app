@@ -16,6 +16,8 @@ export const signup = (email, password) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       // ..
+
+      console.log("signup error", errorCode, errorMessage);
     });
 };
 export const signin = (email, password) => {

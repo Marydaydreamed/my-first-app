@@ -1,12 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { Link, Redirect } from 'expo-router';
-const index = () => {
-  return (
- <Redirect href={'home'}/>
-  )
-}
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { Redirect } from "expo-router";
+import { getAuth } from "firebase/auth";
+const Page = () => {
+  const user = getAuth().currentUser;
+  console.log("USER EMAIL", user?.email);
 
-export default index
+  return <Redirect href={"nevtreh"} />;
+};
 
-const styles = StyleSheet.create({})
+export default Page;
+
+const styles = StyleSheet.create({});

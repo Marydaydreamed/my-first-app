@@ -10,7 +10,7 @@ export const postData = [
   {
     id: 1,
     desc: "My first post 1",
-    img: "https://images.unsplash.com/photo-1519638399535-1b036603ac77?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "https://images.unsplash.com/photo-1706199405787-90ccfa160fa9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     userId: "maryisdaydreaming",
     likedBy: [
       {
@@ -47,7 +47,7 @@ export const postData = [
   {
     id: 2,
     desc: "My first post 2",
-    img: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "https://images.unsplash.com/photo-1706362723628-60e8f1929ffe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     userId: "maryisdaydreaming",
     likedBy: [
       {
@@ -84,7 +84,118 @@ export const postData = [
   {
     id: 3,
     desc: "My first post 3",
-    img: "https://images.unsplash.com/photo-1600758208050-a22f17dc5bb9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "https://plus.unsplash.com/premium_photo-1686388793363-2579a13fe4e0?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    userId: "maryisdaydreaming",
+    likedBy: [
+      {
+        userId: "Nicholsdavid",
+        img: "https://randomuser.me/api/portraits/med/men/75.jpg",
+      },
+      {
+        userId: "camila.walker",
+        img: "https://randomuser.me/api/portraits/women/39.jpg",
+      },
+      {
+        userId: "wilma.coleman",
+        img: "https://randomuser.me/api/portraits/women/77.jpg",
+      },
+    ],
+    comments: [
+      // {
+      //   userId: "Nicholsdavid",
+      //   img: "https://randomuser.me/api/portraits/med/men/75.jpg",
+      //   comment: "nice picture!",
+      // },
+      // {
+      //   userId: "camila.walker",
+      //   img: "https://randomuser.me/api/portraits/women/39.jpg",
+      //   comment: "amazing",
+      // },
+      // {
+      //   userId: "wilma.coleman",
+      //   img: "https://randomuser.me/api/portraits/women/77.jpg",
+      //   comment: "nice one",
+      // },
+    ],
+  },
+  {
+    id: 4,
+    desc: "My first post 4",
+    img: "https://images.unsplash.com/photo-1706219413873-74517aea8585?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    userId: "maryisdaydreaming",
+    likedBy: [
+      {
+        userId: "Nicholsdavid",
+        img: "https://randomuser.me/api/portraits/med/men/75.jpg",
+      },
+      {
+        userId: "camila.walker",
+        img: "https://randomuser.me/api/portraits/women/39.jpg",
+      },
+      {
+        userId: "wilma.coleman",
+        img: "https://randomuser.me/api/portraits/women/77.jpg",
+      },
+    ],
+    comments: [
+      // {
+      //   userId: "Nicholsdavid",
+      //   img: "https://randomuser.me/api/portraits/med/men/75.jpg",
+      //   comment: "nice picture!",
+      // },
+      // {
+      //   userId: "camila.walker",
+      //   img: "https://randomuser.me/api/portraits/women/39.jpg",
+      //   comment: "amazing",
+      // },
+      // {
+      //   userId: "wilma.coleman",
+      //   img: "https://randomuser.me/api/portraits/women/77.jpg",
+      //   comment: "nice one",
+      // },
+    ],
+  },
+  {
+    id: 5,
+    desc: "My first post 5",
+    img: "https://plus.unsplash.com/premium_photo-1676203407503-84c4a5731590?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    userId: "maryisdaydreaming",
+    likedBy: [
+      {
+        userId: "Nicholsdavid",
+        img: "https://randomuser.me/api/portraits/med/men/75.jpg",
+      },
+      {
+        userId: "camila.walker",
+        img: "https://randomuser.me/api/portraits/women/39.jpg",
+      },
+      {
+        userId: "wilma.coleman",
+        img: "https://randomuser.me/api/portraits/women/77.jpg",
+      },
+    ],
+    comments: [
+      // {
+      //   userId: "Nicholsdavid",
+      //   img: "https://randomuser.me/api/portraits/med/men/75.jpg",
+      //   comment: "nice picture!",
+      // },
+      // {
+      //   userId: "camila.walker",
+      //   img: "https://randomuser.me/api/portraits/women/39.jpg",
+      //   comment: "amazing",
+      // },
+      // {
+      //   userId: "wilma.coleman",
+      //   img: "https://randomuser.me/api/portraits/women/77.jpg",
+      //   comment: "nice one",
+      // },
+    ],
+  },
+  {
+    id: 6,
+    desc: "My first post 6",
+    img: "https://images.unsplash.com/photo-1706288456790-c88cbbdb172e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     userId: "maryisdaydreaming",
     likedBy: [
       {

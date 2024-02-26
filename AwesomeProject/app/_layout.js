@@ -1,36 +1,17 @@
 import { Stack } from "expo-router";
+import { SafeAreaView, StatusBar } from "react-native";
 
 export default function Layout() {
   return (
-    <Stack screenOptions={{ headerShown: false }}>
+    <Stack
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
       <Stack.Screen
-        name="profile"
+        name="post/[id]"
         options={{
-          title: "Профайл",
-        }}
-      />
-      <Stack.Screen
-        name="home/index"
-        options={{
-          title: "Нүүр хуудас",
-        }}
-      />
-      <Stack.Screen
-        name="home/newpost"
-        options={{
-          title: "New Post",
-        }}
-      />
-      <Stack.Screen
-        name="home/notif"
-        options={{
-          title: "Notification",
-        }}
-      />
-      <Stack.Screen
-        name="home/search"
-        options={{
-          title: "Search",
+          title: "Posts",
         }}
       />
 
@@ -40,6 +21,14 @@ export default function Layout() {
           // Set the presentation mode to modal for our modal route.
           presentation: "modal",
           title: "Comments",
+        }}
+      />
+      {/* Edit user */}
+      <Stack.Screen
+        name="edit"
+        options={{
+          // Set the presentation mode to modal for our modal route.
+          presentation: "modal",
         }}
       />
     </Stack>

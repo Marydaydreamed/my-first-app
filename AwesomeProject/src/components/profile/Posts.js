@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import PagerView from "react-native-pager-view";
 import { Link } from "expo-router";
-import { Ionicons } from "@expo/vector-icons";
-import { FontAwesome5 } from "@expo/vector-icons";
-import Post from "./Post";
+
+const postImg = require("../../../src/assets/img/Vector.png");
+const userImg = require("../../../src/assets/img/grid 1.png");
 const Posts = ({ data }) => {
   const [selectedTab, setSetselectedTab] = useState(0);
   const onPageChange = (data) => {
@@ -12,6 +12,7 @@ const Posts = ({ data }) => {
     console.log(pageNumber);
     setSetselectedTab(pageNumber);
   };
+
   return (
     <View style={styles.container}>
       {/* Tab buttons */}
@@ -19,12 +20,12 @@ const Posts = ({ data }) => {
         <TouchableOpacity
           style={[styles.btn, selectedTab === 0 && styles.active]}
         >
-          <Ionicons name="apps-outline" size={24} color="black" />
+          <Image source={postImg} style={styles.img} />
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.btn, selectedTab === 1 && styles.active]}
         >
-          <FontAwesome5 name="user-circle" size={24} color="black" />
+          <Image source={userImg} style={styles.img} />
         </TouchableOpacity>
       </View>
       {/* Tab content */}

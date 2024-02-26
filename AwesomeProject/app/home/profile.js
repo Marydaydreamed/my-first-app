@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Image,
   ScrollView,
@@ -7,23 +7,41 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import About from "../../src/profile/About";
-import Post from "../../src/profile/Post";
-import Posts from "../../src/profile/Posts";
+import About from "../../src/components/profile/About";
+import Post from "../../src/components/profile/PostImage";
+import Posts from "../../src/components/profile/Posts";
 import { about, postData } from "../../data";
+import { getAuth } from "firebase/auth";
+import { getUserData } from "../../src/service/users";
 const Profile = () => {
+  // Nevtersen hereglegchin medeelel
+  const currentUser = getAuth().currentUser;
+
+  const myPost = postData.filter((post) => post.userId === about.userId);
+
+  const [user, setUser] = useState({});
+  useEffect(() => {
+    getUser();
+  }, []);
+
+  const getUser = async () => {
+    const user = await getUserData(currentUser.email);
+    console.log("USER", user);
+    if (user) setUser(user);
+  };
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <About
-        img={about.img}
-        name={about.name}
-        bio1={about.bio1}
-        followers={about.followers}
-        following={about.following}
-        postNum={about.postNum}
+        img={user.img}
+        name={user.name}
+        bio1={user.bio1}
+        bio2={user.bio2}
+        followers={user.followers}
+        following={user.following}
+        postNum={myPost.length}
       />
       {/* Үндсэн пост хэсэг */}
-      <Posts data={postData} />
+      <Posts data={myPost} />
     </ScrollView>
   );
 };

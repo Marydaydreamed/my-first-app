@@ -10,7 +10,7 @@ import { Link, router, useLocalSearchParams, useNavigation } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { about, postData } from "../data";
 import { useEffect } from "react";
-import Comment from "../src/profile/Comment";
+import Comment from "../src/components/profile/Comment";
 export default function Modal() {
   const navigation = useNavigation();
 

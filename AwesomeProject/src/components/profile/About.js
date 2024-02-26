@@ -1,11 +1,13 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
-const About = ({ img, name, bio1, followers, following, postNum }) => {
+import { Link } from "expo-router";
+
+const About = ({ img, name, bio1, bio2, followers, following, postNum }) => {
   return (
     <View>
       {/* Толгой хэсэг: Зураг, дагагч */}
       <View style={styles.proHeader}>
-        <Image source={img} style={styles.proImg} />
+        <Image source={{ uri: img }} style={styles.proImg} />
         <View style={styles.follower}>
           <View style={styles.followerItem}>
             <Text style={styles.followerText}>{postNum}</Text>
@@ -25,12 +27,15 @@ const About = ({ img, name, bio1, followers, following, postNum }) => {
       <View style={styles.bio}>
         <Text style={styles.bioName}>{name}</Text>
         <Text style={styles.bioDesc}>{bio1}</Text>
+        <Text style={styles.bioDesc}>{bio2}</Text>
       </View>
       {/* Edit section */}
       <View style={styles.edit}>
-        <TouchableOpacity style={styles.editBtn}>
-          <Text style={styles.editText}>Edit Profile</Text>
-        </TouchableOpacity>
+        <Link href={"edit"} asChild>
+          <TouchableOpacity style={styles.editBtn}>
+            <Text style={styles.editText}>Edit Profile</Text>
+          </TouchableOpacity>
+        </Link>
         <TouchableOpacity style={styles.editBtn}>
           <Text style={styles.editText}>Saved</Text>
         </TouchableOpacity>
@@ -76,9 +81,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
   },
   proImg: {
-    width: 100,
-    height: 100,
-    borderRadius: 100 / 2,
+    width: 107,
+    height: 107,
+    borderRadius: 107 / 2,
     flex: 1,
   },
   follower: {
